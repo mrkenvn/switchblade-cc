@@ -4,7 +4,28 @@
 // Base from Andrymata - Made with ❤
 // Last updated 18 September 2021
 // Webhook: https://api.telegram.org/bot<token>/setwebhook?url=<url>
+import logging
+import os
+import requests
+import time
+import string
+import random
 
+from aiogram import Bot, Dispatcher, executor, types
+from bs4 import BeautifulSoup
+
+ENV = bool(os.environ.get('ENV', True))
+TOKEN = os.environ.get("TOKEN", None)
+BLACKLISTED = os.environ.get("BLACKLISTED", None) 
+PREFIX = "!/"
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+
+# Initialize bot and dispatcher
+bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
+dp = Dispatcher(bot)
+    
 // BOT API Configuration
 $botToken = "TOKEN"; #<------------------- PUT YOUR TOKEN HERE------------->#
 $website = "https://api.telegram.org/bot".$botToken;
