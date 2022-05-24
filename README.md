@@ -12,6 +12,7 @@ Included with BIN Checker, I use Stripe API as 1 REQ.
 - Run [switchblade.php](https://github.com/rizzyneck/switchblade-cc/blob/main/switchblade.php) with the webhook (check the first line).  
 - Use **!cmds or /cmds** to check commands list.  
 
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strikerop96/switchblade-cc)
 ## Info
 Don't forget to give ⭐  
 Last API Scraping: **18th September 2021**  
