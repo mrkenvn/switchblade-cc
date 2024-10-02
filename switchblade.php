@@ -27,7 +27,7 @@ bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot)
     
 // BOT API Configuration
-$botToken = "TOKEN"; #<------------------- PUT YOUR TOKEN HERE------------->#
+$botToken = "7653183409:AAEX_jJgs7xzUGNBjGIvnJYG2zJrU8r2eU0"; #<------------------- PUT YOUR TOKEN HERE------------->#
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -241,19 +241,19 @@ $postcode = $matches1[1][0];
 
 // Proxy Configuration
 $rp1 = array(
-    1 => 'URPROXY',
-    2 => 'URPROXY',
-    3 => 'URPROXY',
-    4 => 'URPROXY',
-    5 => 'URPROXY',
+    1 => '4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
+    2 => '4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
+    3 => '4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
+    4 => '4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
+    5 => '4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
     ); 
     $rpt = array_rand($rp1);
     $rotate = $rp1[$rpt];
 
 
 $ip = array(
-  1 => 'socks5://p.webshare.io:1080',
-  2 => 'http://p.webshare.io:80',
+  1 => 'socks5://mrkenvn89-zone-resi-region-us:Aa221122@4bba78e8c5a4c526.shg.na.pyproxy.io:16666',
+  2 => 'http://4bba78e8c5a4c526.shg.na.pyproxy.io:16666:mrkenvn89-zone-resi-region-us:Aa221122',
     ); 
     $socks = array_rand($ip);
     $socks5 = $ip[$socks];
